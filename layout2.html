@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, nav, main, footer {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        .header-logo {
+            float: left;
+            margin-right: 10px;
+        }
+        .header-title {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .footer-copyright {
+            text-align: center;
+            margin-top: 10px;
+        }
+        main > div {
+            float: left;
+            width: 45%;
+            margin-right: 5%;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+        main > div:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Header Title</h1>
+    </header>
+    <nav>
+        <h2>Navigation Menu</h2>
+    </nav>
+    <main>
+        <div>
+            <h2>Content A</h2>
+            <p>Content for Content A goes here.</p>
+        </div>
+        <div>
+            <h2>Content B</h2>
+            <p>Content for Content B goes here.</p>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <h2>Footer Navigation</h2>
+        </nav>
+        <p class="footer-copyright">&copy; 2023 My Website</p>
+    </footer>
+</body>
+</html>
